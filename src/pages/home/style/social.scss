@@ -1,0 +1,20 @@
+.cardHeader{
+    display: flex;
+    span {
+        font-size: 40px;
+        color: white;
+    }
+    p{
+        margin : auto 10px auto auto;
+        font-weight: 600;
+        color: white
+    }
+}
+.social{
+    margin: 30px 10px 10px 6px;
+    .card-text {
+        font-style: italic;
+        color: white;
+        padding: 8px;
+    }
+}

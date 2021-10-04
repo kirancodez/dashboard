@@ -1,0 +1,81 @@
+.mainPanel {
+  margin-top: 10px;
+  .card {
+      padding:20px;
+      .avthar{
+          color: #617899;
+          font-size: 29px;
+      }
+      p {
+          color: gray;
+          margin: auto 0 39px;
+      }
+      .count{
+          font-size: 47px;
+          right: 0px;
+          position: absolute;
+          top: 19px;
+          right: 35px;
+          font-weight: 300;
+      }
+      }
+  }
+
+  progress {
+    width: 40%;
+    display: block; /* default: inline-block */
+    margin: 2em auto;
+    padding: 3px;
+    border: 0 none;
+    background: #cecece;
+    border-radius: 14px;
+  }
+  progress::-moz-progress-bar {
+    border-radius: 12px;
+    background: #c4c4c4;
+  
+  }
+  /* webkit */
+  @media screen and (-webkit-min-device-pixel-ratio:0) {
+    progress {
+      height: 9px;
+    }
+  }
+  progress::-webkit-progress-bar {
+      background: transparent;
+  }  
+  .card:nth-child(1){
+    .count {
+      color:#8e44ad
+    }
+    progress::-webkit-progress-value {
+      background:#3498db;
+    }
+  }
+  .card:nth-child(2){
+    .count{
+      color: #3498db;
+    }
+    progress::-webkit-progress-value {
+      border-radius: 12px;
+      background:#2980b9;
+    }
+  }
+  .card:nth-child(3){
+    .count{
+      color: #f1c40f;
+    }
+    progress::-webkit-progress-value {
+      border-radius: 12px;
+      background:#f39c12;
+    }
+  }
+  .card:nth-child(4){
+    .count {
+      color: #c0392b;
+    }
+    progress::-webkit-progress-value {
+      border-radius: 12px;
+      background:#e74c3c;
+    }
+  }

@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import {Switch, BrowserRouter, Route,Redirect} from "react-router-dom"
+import Sidebar from "./components/sidebar/Sidebar";
+import Topbar from "./components/topbar/Topbar";
+import "./index.scss"
+import Home from "./pages/home/Home";
+import UiElements from "./pages/random/uiElements";
+import Widgets from "./pages/random/Widgets";
+import Users from "./pages/users/Users";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+const Router = () => {
+    return(
+        <BrowserRouter>
+            <Topbar/>
+            <div className="d-flex">
+                <Sidebar/>
+                    <div className="contentSection">
+                        <Switch>
+                            <Route exact path="/"  component={Home}></Route>
+                            <Route exact path="/apps" exact component={Users} />
+                            <Route exact path="/uielements" exact component={UiElements} />
+                            <Route exact path="/widgets" exact component={Widgets} />
+                        </Switch>
+                    </div>
+            </div>
+        </BrowserRouter>
+    )
 }
 
-export default App;
+export default Router;

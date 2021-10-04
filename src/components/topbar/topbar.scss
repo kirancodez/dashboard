@@ -1,0 +1,36 @@
+.FloatBar {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: #47acc2;
+    .right-tems{
+        display: flex;
+        align-items: center;
+        li {
+            list-style-type: none;
+            margin-right: 30px;
+            color: white;
+        }
+        img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .newMsgIcon {
+            width: 5px;
+            height: 5px;
+            position: absolute;
+            top: 16px;
+            background-color: red;
+            color: white;
+            border-radius: 50%;
+        }
+    }    
+    p{
+            font-size: 22px;
+            span {
+                font-weight: 100 !important;
+            }
+        }
+    }
